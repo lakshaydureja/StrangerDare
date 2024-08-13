@@ -1,0 +1,244 @@
+/* font-family: 'Caprasimo', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Lilita One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive; 
+font-family: 'Pacifico', cursive;
+*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left-section {
+    background-color: #f41641;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#headline{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 4rem;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+
+}
+
+.right-section {
+    background-color: white;
+    color: #f41641;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+.desc{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+
+.note {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+#roomCodeInput{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#welcomeTo{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: #f41641;
+    margin: 0;
+
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+
+/* nav */
+.nav{
+    position: absolute; 
+  top: 0;
+  margin-top: 3vh;
+}
+.btn_red_sliding3 {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 0px solid #f41641;
+  color: #f41641;
+}
+.btn_red_sliding3:hover {
+  color: #fff;
+}
+.btn_red_sliding3:hover:after {
+  height: 100%;
+}
+.btn_red_sliding3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: #f41641;
+}
+.hide-animation {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.hidden {
+    opacity: 0;
+}
+
+
+/* btns */
+
+
+/* for random */
+.btn_red_sliding {
+    font-family: 'Montserrat', sans-serif;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 9px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #f41641;
+  color: #f41641;
+}
+.btn_red_sliding:hover {
+  color: #fff;
+}
+.btn_red_sliding:hover:after {
+  width: 100%;
+}
+.btn_red_sliding:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f41641;
+}
+
+/* for friends */
+.btn_round_red {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 9px;
+  border: 2px solid #ffffff;
+  background: #f41641;
+}
+.btn_round_red:hover {
+  background: #fff;
+  color: #f41641;
+}

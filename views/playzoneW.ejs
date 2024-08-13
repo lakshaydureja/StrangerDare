@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playzone Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fredoka:wght@500&family=Lilita+One&family=Montserrat:wght@500&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+
+<body>
+
+    <div id="loadingContainer" class="loading-container">
+        <p class="loading-text">Loading</p>
+    </div>
+    <div id="WaitContainer" class="loading-container">
+        <p class="loading-text">Waiting for the player</p>
+    </div>
+
+    <div class="header">
+        <p class="logo" id="headline">Stranger Dare</p>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="chat-header">Chat</div>
+            <div id="roomcode">
+
+            </div>
+
+            <div class="chat-box"></div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" placeholder="Enter Message" id="chat-input">
+                <!-- <button class="chat-send-btn" id="btnSend"></button> -->
+                <i class="uil uil-message chat-send-btn" id="btnSend"></i>
+
+            </div>
+        </div>
+        <div class="right-section">
+
+
+            <div class="remote-video-row">
+                <video class="remote-video" id="remoteVideo" autoplay></video>
+            </div>
+            <div class="control-row">
+                <div class="column">
+                    <div class="control-buttons">
+                        <button class="control-button" id="done">Wait</button>
+                        <button class="control-button" id="skip">Skip</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="bottle-board">
+                        <div class="base" id="base"></div>
+                        <div class="bottle" id="bottle"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <video class="own-video" id="localVideo" muted="muted" autoplay></video>
+                    <div class="controlVid">
+
+                        <img src="assets/mic-off.svg" alt="Microphone off" id="btnMic" class="border-cont">
+                        <img src="assets/cam-off.svg" alt="Camera off" id="btnCam" class="border-cont">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playzone Mobile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fredoka:wght@500&family=Lilita+One&family=Montserrat:wght@500&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <div id="loadingContainer" class="loading-container">
+        <p class="loading-text">Loading</p>
+        
+    </div>
+    <div id="WaitContainer" class="loading-container">
+        <p class="loading-text">Waiting for the player</p>
+    </div>
+    <header>
+        <p id="headline">Stranger Dare</p>
+    </header>
+    <div class="container">
+      
+        <div class="video-container">
+            <div id="roomcode">
+
+            </div>
+            <video class="remote-video" id="remoteVideo" autoplay></video>
+            <video class="my-camera" id="localVideo" muted="muted" autoplay></video>
+            <div class="controlVid">
+                <img src="assets/mic-off.svg" alt="Microphone off" id="btnMic" class="border-cont">
+                <img src="assets/cam-off.svg" alt="Camera off" id="btnCam" class="border-cont">
+            
+                
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="done">Wait</button>
+            <div class="base-container">
+                <div class="base" id="base"></div>
+                <div class="bottle" id="bottle"></div>
+            </div>
+            <button class="btn" id="skip">Skip</button>
+        </div>
+        <div class="chat-container">
+            <div class="chat-messages">
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button id="btnSend">Send</button>
+            </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
